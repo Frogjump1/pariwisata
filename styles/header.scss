@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins' , sans-serif;
+}
+.navbar .navbar-toggler{
+  border-color: white;
+  background-color: white
+}
+.navbar .navbar-brand{
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: greenyellow;
+}
+.navbar-nav .navbar-brand:hover{
+  color: white;
+}
+.navbar-nav .navbar-brand a {
+  color: white;
+}
+.navbar-nav .nav-item .nav-link{
+ color: white;
+ transition: all 0.3 ease;
+}
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url(../public/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero .container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50% , -50%);
+}
+
+ .hero h1{
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 48px;
+   text-align: center;
+   font-weight: bold;
+ }
+ .about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about .box-about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .box-about .box:nth-child(2) img{
+  border-radius: 10px;
+  width: 600px;
+}
+.about .box-about .box:nth-child(1){
+  padding-right: 30px;
+}
+.about .box-about .box:nth-child(1) h1{
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.about .box-about .box:nth-child(1) p{
+  line-height: 2;
+}
+
+ .about .box-about .box:nth-child(2) img {
+   border-radius: 10px;
+ }
+
+ @media screen and (max-width: 990px){
+   .hero h1{
+     font-size: 40px;
+   }
+   .container{
+     max-width: none;
+     padding-right: 0;
+     padding-left: 0;
+   }
+   .navbar{
+     background-color:  rgba(0, 0, 0, 0.5);
+
+   }
+   .about .box-about{
+   flex-direction: column-reverse;
+ }
+ .about .box-about .box:nth-child(1){
+   text-align: center;
+   margin-top: 30px;
+   padding-right: 0;
+ }
+ .about .box-about .box:nth-child(2) img{
+   width: 400px;
+   margin-top: 150px;
+ }
+ }
